@@ -1,7 +1,5 @@
 When I open the web page, I don't see the next logo; and that is because I'm running at night.  Making the following change gets the icon to show up:
 
-The following change addresses the problem:
-
 ```diff
 diff --git a/app/page.tsx b/app/page.tsx
 index 54bcb72..2e04d1a 100644
