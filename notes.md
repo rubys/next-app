@@ -56,14 +56,12 @@ At this point, I can set a repository secret.  It looks like the correct way to 
 fly auth token | gh secret set FLY_API_TOKEN
 ```
 
+Alternately, github repository secrets can be set using the [web ui](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions?tool=webui#creating-secrets-for-a-repository).
+
 I recommend you make the fly launch command as follows:
 
 ```
 fly launch --name next-app-$USER-$RANDOM
 ```
 
-And then instead of suggesting that they change the name in the `fly.toml`, tell them that they can pick whatever name they like, it just has to be unique.
-
-
-
-
+And then instead of suggesting that they change the name in the `fly.toml`, tell them that they can pick whatever name they like at launch time, it just has to be unique.
